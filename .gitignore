@@ -7,7 +7,24 @@ venv/
 
 # Django
 db.sqlite3
-media/
+
+# --- Media handling ---
+# Ignore everything inside media
+media/*
+
+# Allow the media directory itself
+!media/
+
+# Allow media/default.jpg
+!media/default.jpg
+
+# Allow profile_pics directory
+!media/profile_pics/
+
+# Ignore all uploaded profile pictures
+media/profile_pics/*
+
+# ----------------------
 
 # Secrets
 .env
